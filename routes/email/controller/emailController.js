@@ -1,8 +1,8 @@
 const nodemailer = require('nodemailer');
 const {google} = require ('googleapis')
 const smtpTransport = require("nodemailer-smtp-transport")
-CLIENT_ID="22212146535-lfca68h6mag0ssvi14g9qadf2cj5i9bo.apps.googleusercontent.com"
-CLIENT_SECRET="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"
+CLIENT_ID="768475917780-o41rhhfi43gqodlbnfbabevdn6ptlia9.apps.googleusercontent.com"
+CLIENT_SECRET="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"
 REDIRECT_URI="https://developers.google.com/oauthplayground"
 REFRESH_TOKEN="1//04OiKec69o0efCgYIARAAGAQSNwF-L9Irbl6FXL97pXkQMBNDyidpEaVILx6S9vZYy3sU8KXpDD-Kf4OcRvINg2rrEhTikLE9LCQ"
 
