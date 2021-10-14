@@ -10,7 +10,8 @@ router.post('/send', (req, res) => {
         console.log(req.body)
       const mailOptions = {
         from: process.env.email,
-        to: "nkvak@fordham.edu", // list of receivers
+        to: "nkvak@fordham.edu",
+        subject:"Portfolio email", // list of receivers
         html: `
         <h1 style="font-size:36px; color:rgb(91, 91, 249);">${req.body.name}, wants to connect with you!</h1>
           <div style="border:1px solid rgb(91, 91, 249); width:500px; border-radius:8px; padding:30px;">
