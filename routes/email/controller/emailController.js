@@ -4,7 +4,7 @@ const smtpTransport = require("nodemailer-smtp-transport")
 CLIENT_ID="1006631961454-66m5c0tj9k8mla0jpqoa2jctsqrb54kv.apps.googleusercontent.com"
 CLIENT_SECRET="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"
 REDIRECT_URI="https://developers.google.com/oauthplayground"
-REFRESH_TOKEN="1//04CiyuOoma478CgYIARAAGAQSNwF-L9IrbkgBmpqJhXgyT8H7a0c_SP9CFw7baQfsepYGv9bjK3EgktlTi23G7lDILpiV-HGnRys"
+REFRESH_TOKEN="1//04lfmfDnvWRlQCgYIARAAGAQSNwF-L9Ir1IopwX3KhNy1u3azbQYgdMozwfJz89pHWwxKSjnldJUlCPiZzMCjRnZ5oV-9wcEUwME"
 
 const oAuth2Client = new google.auth.OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI)
 oAuth2Client.setCredentials({refresh_token: REFRESH_TOKEN})
