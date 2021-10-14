@@ -9,12 +9,13 @@ router.post('/send', (req, res) => {
     try {
         console.log(req.body)
       const mailOptions = {
-        from: req.body.email,
-        to: process.env.email, // list of receivers
+        from: process.env.email,
+        to: "nkvak@fordham.edu", // list of receivers
         html: `
-        <h1 style="font-size:36px; color:rgb(91, 91, 249);">${req.body.name} wants to connect with you!</h1>
+        <h1 style="font-size:36px; color:rgb(91, 91, 249);">${req.body.name}, wants to connect with you!</h1>
           <div style="border:1px solid rgb(91, 91, 249); width:500px; border-radius:8px; padding:30px;">
             <h2 style="color:black;">Message: ${req.body.message}</h2>
+            <h2 style="color:black;">Reply to: ${req.body.email}</h2>
         `
       };
   

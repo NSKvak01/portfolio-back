@@ -4,6 +4,7 @@ var app = express();
 let cors  = require("cors")
 
 const ErrorMessageHandlerClass = require ("./routes/utils/ErrorMessageHandlerClass")
+const errorController = require("./routes/utils/errorController")
 const emailRouter = require('./routes/email/emailRouter')
 app.use(cors())
 
@@ -23,5 +24,6 @@ app.all("*", function (req,res, next){
   ))
 })
 
+app.use(errorController)
 
 module.exports = app;
