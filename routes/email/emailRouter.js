@@ -1,7 +1,7 @@
 const express = require("express")
 const router = express.Router()
 const dotenv = require('dotenv');
-const transporter = require('./controller/emailController');
+const transport = require('./controller/emailController');
 dotenv.config();
 
 
@@ -19,7 +19,7 @@ router.post('/send', (req, res) => {
         `
       };
   
-      transporter.sendMail(mailOptions, function (err, info) {
+      transport.sendMail(mailOptions, function (err, info) {
         if (err) {
           console.log(err)
           res.status(500).json({
